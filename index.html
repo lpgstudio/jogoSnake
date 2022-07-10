@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Snake </title>
+
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            background:#d1d1d1;
+            height: 100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column;
+        }
+        .placar,.placar div{
+            position: relative;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            width: 400px;
+        }
+        .placar div{
+            width: 50%; 
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;           
+        }
+        .recorde{
+            color: red;
+            font-weight: 700;
+        }
+
+        .ponto{
+            color: green;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="placar">
+        <div>
+            <p class="ponto">Placar: </p><span class="ponto"></span>
+        </div>
+        <div>
+            <p class="recorde">Recorde: </p><span class="recorde"></span>
+        </div>
+    </div>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script src="script.js"></script>
+    
+</body>
+</html>
